@@ -9,7 +9,7 @@ namespace CSharp.Revision.AppError
         {
             try
             {
-                op();
+                op?.Invoke();
             }
             catch (NotSufficientBalance e)
             {
